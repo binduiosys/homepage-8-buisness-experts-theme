@@ -28,13 +28,14 @@ p{
     font-weight: 400;
     color: var(--lightblue);
     font-size: 20px;
-    line-height: 30px; 
+    line-height: 28px; 
 }
 h2{
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Overpass';
+    font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 50px;
+    line-height: 60px;
     color: var(--lightblue);
 
 }
@@ -46,6 +47,15 @@ h3{
     text-align: center;
     color: var(--lightblue);
   
+}
+h5{
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--lightblue);
 }
 h6{
     font-family: 'Overpass';
@@ -66,7 +76,6 @@ span.underline{
 }
 .bg-section{
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
 
 }
