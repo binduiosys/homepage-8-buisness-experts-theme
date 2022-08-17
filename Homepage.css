@@ -1,97 +1,530 @@
-:root{
-    --lightgreen:#5DC9BE;
+:root {
+    --lightgreen: #5DC9BE;
     --darkgrey: #CECECE;
-    --lightgrey:#BABABA;
+    --lightgrey: #BABABA;
 
     --lightblue: #233D63;
     --white: #ffffff;
 }
-.buisness-form-section{
+
+.hero-section .main-flex-one {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.main-flex-one .left-col {
+    flex-basis: 47%;
+}
+
+.main-flex-one .right-col {
+    flex-basis: 53%;
+}
+
+.left-col .bg-section {
+    min-height: 463px;
+    background-size: contain;
+}
+
+.hero-section {
     padding: 110px 0px 110px 0px;
 }
-.buisness-form-section .leftcol-image {
-    min-height: 463px;
-}
-.right-col .underline{
+
+.right-col .underline {
     text-decoration: underline;
     text-underline-offset: 10px;
 }
 
-.right-col{
-    margin: 0 0 0 auto;
-    position: relative;
-    z-index: 1;
-}
-.rightcol-heading{
-    max-width: 679px;
-    margin: 0 0 0 auto;
-}
-.right-col::after{
-    content:"";
-    background-image: url(./investment.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    min-height: 463px;
-    width:100%;
-    max-width: 765px;
-    position: absolute;
-    z-index: -1;
-    top: 12%;
-    right: 44%;
-}
-.right-col-content{
+.right-col-content {
     max-width: 377px;
-    width:100%;
+    width: 100%;
     margin: 0 0 0 auto;
     text-align: right;
-    padding: 53px 0px 37px 0px;
+    padding: 35px 0px 35px 0px;
 }
 
-.right-col-form{
+.right-col-form {
     text-align: end;
 }
-.right-col-form .input{
+
+.right-col-form .input {
     border: 1px solid var(--lightgrey);
     border-radius: 4px;
-    padding: 18px 109px 18px 20px ;
+    padding: 18px 109px 18px 20px;
     font-family: 'Overpass';
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     opacity: 0.5;
 }
-.right-col-form .form-button{
+
+.right-col-form .form-button {
     padding: 18px 31px 18px 31px;
     border: 1px solid var(--lightgreen);
-    border-radius: 4px;  
+    border-radius: 4px;
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
-    color:var(--lightgreen);
+    color: var(--lightgreen);
     background-color: var(--white);
-    
-    
+    display: inline-block;
+
+
 }
-.right-col-form .form-button:hover{
+
+.right-col-form .form-button:hover {
     color: var(--white);
     background-color: var(--lightgreen);
 }
 
+.slider-section .buisness-logo-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.buisness-logo-flex .buisness-logo {
+    flex-basis: 20%;
+}
+
+.slider-moves .slider-heading {
+    margin: 45px 0px 45px 0px;
+}
+
+.slider-section .slider-images {
+    border: 1px solid var(--lightgrey);
+    border-radius: 4px;
+    padding: 30px 0px 30px 0px;
+}
+section.limelight-section{
+    padding-bottom: 130px;
+    position: relative;
+}
+section.limelight-section::after{
+    content: "";
+    background-image: url(./Group\ 815.svg);
+    min-height: 212px;
+    max-width: 191px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    left: -14px;
+    top: -63px;
+}
+
+.buisness-logo img {
+    display: block;
+    width: 100%;
+    max-width: 120px;
+}
+
+.buisness-logo-flex .logo {
+    width: 110px;
+    max-width: 110px;
+    min-height: 44px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.limelight-body .lime-light-heading {
+    max-width: 631px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.limelight-body .lime-light-heading-content {
+    max-width: 539px;
+    margin: 0 auto;
+    margin-top: 15px;
+
+}
+
+.flex-image img {
+    width: 100%;
+    display: block;
+}
+
+.limelight-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.limelight-flex .limeflex-one {
+    flex-basis: 26.5%;
+}
+
+.limelight-flex .limeflex-one:not(:nth-child(3n+3)) {
+    margin-right: 9.5%;
+}
+
+section.limelight-section {
+    padding: 70px 0px;
+    background-color: #FBFBFB;
+}
+
+.limelight-section .container {
+    max-width: 1033px;
+    margin: 0 auto;
+}
+
+.limelight-body .flex-describe {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #30496D;
+    text-align: center;
+    padding: 30px 0px 50px 0px;
+}
+
+.limelight-body a.flex-buttons {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #233D63;
+    letter-spacing: 0.225px;
+}
+.limelight-body a.flex-buttons:hover{
+    color:var(--lightgreen)
+}
+.limelight-body .flex-button {
+    text-align: center;
+}
+
+.limelight-body .underline-one {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    color: #233D63;
+}
+
+.limelight-body .flex-heading h5{
+    margin-top: 30px;
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.0552632px;
+}
+
+section.slider-section {
+    padding-bottom: 150px;
+}
 
 
-/* media queries */
-@media(max-width:768px) and (max-width:1024){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------media queries------------------ */
+
+@media (min-width:768px) and (max-width:1024px) {
+    .rightcol-heading h1 {
+        font-family: 'Overpass', sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 52px;
+        color: var(--lightblue);
+        text-align: right;
+
+    }
+
+    span.underline {
+        text-decoration: underline;
+        text-underline-offset: 8px;
+        font-family: 'Overpass';
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 52px;
+    }
+
+    .right-col-content {
+        max-width: 377px;
+        width: 100%;
+        padding: 30px 0px 30px 0px;
+    }
+
+    .right-col-form .form-button {
+        padding: 15px 31px 15px 31px;
+        margin-top: 20px;
+    }
+
+    .right-col-form .input {
+        padding: 15px 109px 15px 20px;
+        font-family: 'Overpass';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        opacity: 0.5;
+    }
+    .limelight-body .flex-heading h5 {
+        margin-top: 30px;
+        font-family: 'Overpass';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.0552632px;
+    }
+
+
 
 }
 
 
-@media(max-width:767px){
 
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+    .hero-section .main-flex-one {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .main-flex-one .left-col {
+        flex-basis: 100%;
+    }
+
+    .main-flex-one .right-col {
+        flex-basis: 100%;
+    }
+
+    .rightcol-heading h1 {
+        font-family: 'Overpass', sans-serif;
+        font-weight: 400;
+        font-size: 39px;
+        line-height: 48px;
+        color: var(--lightblue);
+        text-align: center;
+        margin-top: 70px;
+
+    }
+
+    span.underline {
+        text-decoration: underline;
+        text-underline-offset: 8px;
+        font-family: 'Overpass';
+        font-weight: 800;
+        font-size: 39px;
+        line-height: 48px;
+    }
+
+    .right-col-content {
+        max-width: 620px;
+        width: 100%;
+        padding: 30px 0px 30px 0px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .right-col-form .form-button {
+        padding: 15px 31px 15px 31px;
+        margin-top: 20px;
+    }
+
+    .right-col-form .input {
+        padding: 15px 109px 15px 20px;
+        font-family: 'Overpass';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        opacity: 0.5;
+    }
+
+    .right-col-form {
+        text-align: center;
+    }
+
+    .left-col .bg-section {
+        min-height: 250px;
+    }
+
+    .hero-section {
+        padding: 50px 0px 50px 0px;
+    }
+
+    .left-col .bg-section {
+        min-height: 350px;
+    }
+    .limelight-flex .limeflex-one {
+        flex-basis: 100%;
+        margin-bottom: 65px;
+    }
     
+    .limelight-flex .limeflex-one:not(:nth-child(3n+3)) {
+        margin-right: 0%;
+    }
+    .flex-image img {
+        width: 100%;
+        max-width: 263px;
+        display: block;
+        margin: 0 auto;
+    }
+    .limelight-body .flex-describe {
+        padding: 20px 0px 20px 0px;
+    }
+    .lime-light-heading h2 {
+        font-family: 'Overpass';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+        color: var(--lightblue);
+    }
+    .limelight-body .underline-one {
+        font-family: 'Overpass';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #233D63;
+    }
+    
+
 }
-@media(max-width:480px){
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:480px) {
+    .hero-section .main-flex-one {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
+    .main-flex-one .left-col {
+        flex-basis: 100%;
+    }
+
+    .main-flex-one .right-col {
+        flex-basis: 100%;
+    }
+
+    .rightcol-heading h1 {
+        font-family: 'Overpass', sans-serif;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 43px;
+        color: var(--lightblue);
+        text-align: center;
+    }
+
+    span.underline {
+        text-decoration: underline;
+        text-underline-offset: 8px;
+        font-family: 'Overpass';
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 43px;
+    }
+
+    .right-col-content {
+        max-width: 406px;
+        width: 100%;
+        text-align: center;
+        padding: 35px 0px 35px 0px;
+    }
+
+    .right-col-form .form-button {
+        padding: 15px 31px 15px 31px;
+        margin-top: 20px;
+    }
+
+    .right-col-form .input {
+        padding: 15px 109px 15px 20px;
+        font-family: 'Overpass';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        opacity: 0.5;
+    }
+
+    .right-col-form {
+        text-align: center;
+    }
+
+    .left-col .bg-section {
+        min-height: 250px;
+    }
+
+    .hero-section {
+        padding: 50px 0px 50px 0px;
+    }
+    .lime-light-heading h2 {
+        font-family: 'Overpass';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+        color: var(--lightblue);
+    }
+    .limelight-body .underline-one {
+        font-family: 'Overpass';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #233D63;
+    }
+
 
 }
