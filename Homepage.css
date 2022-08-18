@@ -103,19 +103,20 @@
 section.limelight-section{
     padding-bottom: 130px;
     position: relative;
+    margin: 130px 0px 130px 0px;
 }
 section.limelight-section::after{
     content: "";
     background-image: url(./Group\ 815.svg);
-    min-height: 212px;
-    max-width: 191px;
+    min-height: 214px;
+    max-width: 131px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     z-index: -1;
     left: -14px;
-    top: -63px;
+    top: -103px;
 }
 
 .buisness-logo img {
@@ -230,10 +231,243 @@ section.limelight-section {
     text-align: center;
     letter-spacing: 0.0552632px;
 }
-
-section.slider-section {
-    padding-bottom: 150px;
+.slider-section-two{
+    background-color: #FBFBFB;
+    padding: 100px 0px 100px 0px;
+    position: relative;
+    z-index: 1;
 }
+.image-quotes img {
+    max-width: 105px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.image-quotes {
+    margin-bottom: 50px;
+}
+.slider-review {
+    max-width: 710px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.developer-image img {
+    width: 100%;
+    max-width: 80px;
+    margin: 0 auto;
+}
+.slider-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+.developer-image {
+    margin-right: 20px;
+}
+.developer-details .developer-name{
+font-family: 'Overpass';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+}
+
+.developer-details .role{
+font-family: 'Overpass';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+}
+.slider-review{
+font-family: 'Overpass';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 38px;
+text-align: center;
+}
+.slider-section-two::after{
+    content: "";
+    background-image: url("./Mask\ Group.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 123px;
+    min-height: 141px;
+    position: absolute;
+    z-index: -1;
+    top: 17%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+}
+
+
+.slider-section-two::before{
+    content: "";
+    background-image: url("./Mask\ Group\ \(1\).svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 123px;
+    min-height: 141px;
+    position: absolute;
+    z-index: -1;
+    top: 17%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+
+}
+.slider-section-two .container{
+    position: relative;
+    z-index:1;
+}
+.slider-section-two .container::before{
+    content: "";
+    background-image: url("./Mask\ Group\ \(3\).svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 82px;
+    min-height: 87px;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    left: -6%;
+    transform: translate(-50%, -50%);
+}
+.slider-section-two .container::after{
+    content: "";
+    background-image: url("./Mask\ Group\ \(4\).svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 82px;
+    min-height: 87px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: -13%;
+    transform: translate(-50%, -50%);
+
+}
+.experts-social-link{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.link-one{
+    flex-basis: 15%;
+}
+.link-one .fa-brands{
+    color: #1E135C;
+    width: 100%;
+    max-width: 9px;
+    min-height: 16px;
+}
+.meet-experts-body{
+    background-color:#FBFBFB;
+}
+.meet-experts-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 180px;
+    position: relative;
+    z-index: 1;
+}
+.meet-experts-flex::after{
+    content: "";
+    background-image: url("./Vector\ \(1\).svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 40px;
+    min-height: 34px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top:0;
+    left: 23%;
+    z-index: -1;
+}
+.meet-experts-flex::before{
+    content: "";
+    background-image: url("./Vector\ \(2\).svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 40px;
+    min-height: 34px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    bottom: -18%;
+    left: 67.5%;
+    z-index: -1;
+}
+
+
+
+.bg-vector{
+    position: relative;
+    z-index: 1;
+}
+.bg-vector::after{
+    content: "";
+    background-image: url("./Vector\ \(1\).svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 40px;
+    min-height: 34px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: -17px;
+    left: 89%;
+    z-index: -1;
+    transform: scaleX(-1);
+}
+.experts-flex-one{
+    flex-basis: 23.1%;
+    text-align: center;
+    border: 1px solid #BABABA;
+    border-radius: 4px;
+    padding: 40px 0px;
+    margin-right: 5%;
+}
+.experts-designation{
+    margin: 20px 0px;
+}
+.buisness-experts .underline-one{
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    color: #233D63;
+}
+.experts-heading{
+    text-align: center;
+    padding-bottom: 120px;
+}
+.buisness-experts{
+    margin: 125px 0px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -304,6 +538,45 @@ section.slider-section {
         text-align: center;
         letter-spacing: 0.0552632px;
     }
+    .slider-review{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 467px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;  
+}
+.slider-section-two .container::after {
+    content: "";
+    background-image: url(./Mask\ Group\ \(4\).svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 82px;
+    min-height: 87px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: -6%;
+    transform: translate(-50%, -50%);
+}
+.slider-section-two .container::before {
+    content: "";
+    background-image: url(./Mask\ Group\ \(3\).svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 82px;
+    min-height: 87px;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 
 
@@ -427,6 +700,51 @@ section.slider-section {
         text-decoration-line: underline;
         color: #233D63;
     }
+    .slider-review{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 467px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;  
+}
+.slider-section-two .container::after {
+    content: "";
+    background-image: url(./Mask\ Group\ \(4\).svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 82px;
+    min-height: 87px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: -6%;
+    transform: translate(-50%, -50%);
+}
+.slider-section-two .container::before {
+    content: "";
+    background-image: url(./Mask\ Group\ \(3\).svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 82px;
+    min-height: 87px;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    left: 5%;
+    transform: translate(-50%, -50%);
+}
+.image-quotes img {
+    max-width: 65px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
     
 
 }
@@ -525,6 +843,55 @@ section.slider-section {
         text-decoration-line: underline;
         color: #233D63;
     }
-
+    .image-quotes img {
+        max-width: 50px;
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .slider-review {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        max-width: 467px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 22px;
+    } 
+       .slider-section-two .container::after {
+        content: "";
+        background-image: url(./Mask\ Group\ \(4\).svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        max-width: 82px;
+        min-height: 87px;
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        right: -12%;
+        transform: translate(-50%, -50%);
+    }
+    .slider-section-two .container::before {
+        content: "";
+        background-image: url(./Mask\ Group\ \(3\).svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        max-width: 82px;
+        min-height: 87px;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        left: 8%;
+        transform: translate(-50%, -50%);
+    }
+    .developer-image img {
+        width: 100%;
+        max-width: 55px;
+        margin: 0 auto;
+    }
+   
 
 }
