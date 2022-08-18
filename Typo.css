@@ -3,34 +3,29 @@
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.content-wrapper{
+
+.content-wrapper {
     max-width: 1204px;
     padding: 0 20px;
     margin: 0 auto;
 }
 
-h1{
+h1 {
     font-family: 'Overpass', sans-serif;
     font-weight: 400;
     font-size: 67px;
     line-height: 80px;
     color: var(--lightblue);
     text-align: right;
-   
+
 }
-p{
-    font-family: 'Overpass', sans-serif;
-    font-weight: 400;
-    color: var(--lightblue);
-    font-size: 20px;
-    line-height: 28px; 
-}
-h2{
+
+h2 {
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 400;
@@ -39,16 +34,28 @@ h2{
     color: var(--lightblue);
 
 }
-h3{
+
+h3 {
     font-family: 'Overpass', sans-serif;
     font-weight: 400;
     font-size: 50px;
     line-height: 54px;
     text-align: center;
     color: var(--lightblue);
-  
+
 }
-h5{
+
+h4 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--lightblue);
+}
+
+h5 {
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 400;
@@ -57,7 +64,8 @@ h5{
     text-align: center;
     color: var(--lightblue);
 }
-h6{
+
+h6 {
     font-family: 'Overpass';
     font-weight: 400;
     font-size: 12px;
@@ -66,7 +74,16 @@ h6{
     letter-spacing: 0.225px;
     color: var(--lightblue);
 }
-span.underline{
+
+p {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    color: var(--lightblue);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+span.underline {
     text-decoration: underline;
     text-underline-offset: 8px;
     font-family: 'Overpass';
@@ -74,7 +91,8 @@ span.underline{
     font-size: 67px;
     line-height: 80px;
 }
-.bg-section{
+
+.bg-section {
     background-repeat: no-repeat;
     background-position: center;
 
