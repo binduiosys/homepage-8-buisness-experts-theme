@@ -728,7 +728,9 @@ color: #233D63;
     color: #ffffff;
     background-color: #5DC9BE;
 }
-
+ .blog-section .container{
+    padding: 110px 0px;
+ }
 
 
 
