@@ -625,7 +625,7 @@ section.limelight-section {
 .blog-section .blog-section-flex {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
 }
 
@@ -634,6 +634,8 @@ section.limelight-section {
     background-color: #ffffff;
     border-radius: 5px;
     border: 1px solid #CECECE;
+    position: relative;
+
 }
 
 .blog-section .blog-one:not(:nth-child(3n+3)) {
@@ -647,7 +649,7 @@ section.limelight-section {
     line-height: 26px;
     letter-spacing: 0.0236842px;
     color: #233D63;
-    padding: 28px 0px 33px 0px;
+    margin-bottom: 31px;
 
 }
 
@@ -668,9 +670,9 @@ section.limelight-section {
     line-height: 26px;
     letter-spacing: 0.4px;
     color: #233D63;
-    padding: 36px 0px 36px 0px;
+    padding: 36px 0px 60px 0px;
 }
-.read-button a {
+.blog-button a {
     font-family: 'Overpass';
     font-weight: 600;
     font-size: 18px;
@@ -684,7 +686,7 @@ section.limelight-section {
     display: block;
 }
 .blog-contents {
-    padding: 0% 5%;
+    padding: 22px;
 }
 .blog-section .underline-one {
     font-family: 'Overpass';
@@ -731,6 +733,13 @@ color: #233D63;
  .blog-section .container{
     padding: 110px 0px;
  }
+ .blog-button {
+    position: absolute;
+    bottom: 0;
+}
+li.read-button {
+    padding: 0px 0px 10px 0px;
+}
 
 
 
