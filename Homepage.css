@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Open+Sans:wght@400;600&family=Overpass:wght@400;600&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Open+Sans:wght@400;600&family=Overpass:wght@400;600;800&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,700;1,800;1,900&display=swap');
 :root {
     --lightgreen: #5DC9BE;
     --darkgrey: #CECECE;
@@ -70,16 +70,18 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
-    color: var(--lightgreen);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--lightgreen);
     display: inline-block;
+    transition: 0.3s all;
 
 
 }
 
 .right-col-form .form-button:hover {
-    color: var(--white);
-    background-color: var(--lightgreen);
+    color: var(--lightgreen);
+    background-color: var(--white);
+
 }
 
 .slider-section .buisness-logo-flex {
@@ -94,7 +96,7 @@
 }
 
 .slider-moves .slider-heading {
-    margin: 45px 0px 45px 0px;
+    margin: 0px 0px 45px 0px;
 }
 
 .slider-section .slider-images {
@@ -103,24 +105,23 @@
     padding: 30px 0px 30px 0px;
 }
 
-section.limelight-section {
-    padding-bottom: 130px;
+.limelight-section {
     position: relative;
+    z-index: 1;
     margin: 130px 0px 130px 0px;
 }
-
-section.limelight-section::after {
-    content: "";
-    background-image: url(./Group\ 815.svg);
-    min-height: 214px;
-    max-width: 131px;
-    width: 100%;
-    background-repeat: no-repeat;
+.limelight-section::before{
+    content:"";
+    background-image: url('./expertsimage-bg.svg');
+    background-repeat:no-repeat ;
     background-size: cover;
+    width: 100%;
+    min-height: 172px;
+    max-width: 214px;
     position: absolute;
     z-index: -1;
-    left: -14px;
-    top: -103px;
+    bottom: -38%;
+    left: -6%;
 }
 
 .buisness-logo img {
@@ -143,16 +144,14 @@ section.limelight-section::after {
 
 .limelight-body .lime-light-heading {
     max-width: 631px;
-    margin: 0 auto;
     text-align: center;
-    margin-bottom: 70px;
+    margin: 0 auto;
 }
 
 .limelight-body .lime-light-heading-content {
     max-width: 539px;
     margin: 0 auto;
     margin-top: 15px;
-
 }
 
 .flex-image img {
@@ -165,6 +164,7 @@ section.limelight-section::after {
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
+    margin-top: 72px;
 }
 
 .limelight-flex .limeflex-one {
@@ -172,12 +172,7 @@ section.limelight-section::after {
 }
 
 .limelight-flex .limeflex-one:not(:nth-child(3n+3)) {
-    margin-right: 9.5%;
-}
-
-section.limelight-section {
-    padding: 70px 0px;
-    background-color: #FBFBFB;
+    margin-right: 10.2%;
 }
 
 .limelight-section .container {
@@ -476,7 +471,7 @@ section.limelight-section {
 }
 
 .experts-images {
-    flex-basis: 44.3%;
+    flex-basis: 46.3%;
     position: relative;
     z-index: 1;
 }
@@ -506,7 +501,7 @@ section.limelight-section {
     min-height: 176px;
     position: absolute;
     z-index: -1;
-    top: 25%;
+    top: 26%;
     left: 66%;
     transform: translate(-50%, -50%);
 }
@@ -642,7 +637,7 @@ section.limelight-section {
     margin-right: 3.2%;
 }
 
-.blog-section .blog-heading {
+.blog-section .blog-heading p {
     font-family: 'Overpass';
     font-weight: 600;
     font-size: 20px;
@@ -653,25 +648,27 @@ section.limelight-section {
 
 }
 
-.blog-section .blog-date {
+.blog-section .blog-date p {
     font-family: 'Overpass';
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 3.025px;
     color: #233D63;
+    margin-bottom: 34px;
 
 }
 
-.blog-section p.blog-paragraph {
+.blog-section .blog-paragraph p {
     font-family: 'Overpass';
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.4px;
     color: #233D63;
-    padding: 36px 0px 60px 0px;
+    margin-bottom: 36px;
 }
+
 .blog-button a {
     font-family: 'Overpass';
     font-weight: 600;
@@ -681,13 +678,16 @@ section.limelight-section {
     color: #5DC9BE;
 
 }
-.blog-image img{
+
+.blog-image img {
     width: 100%;
     display: block;
 }
+
 .blog-contents {
     padding: 22px;
 }
+
 .blog-section .underline-one {
     font-family: 'Overpass';
     font-weight: 800;
@@ -696,24 +696,26 @@ section.limelight-section {
     text-align: center;
     color: #233D63;
 }
-.blog-main-heading{
+
+.blog-main-heading {
     text-align: center;
-    padding-bottom: 57px;
+    margin-bottom: 58px;
 }
-.blog-main-paragraph{
+
+.blog-main-paragraph {
     font-family: 'Overpass';
-font-weight: 400;
-font-size: 16px;
-line-height: 26px;
-text-align: center;
-color: #233D63;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.625px;
+    text-align: center;
+    color: #233D63;
 }
-.center-button a{
+
+.center-button a {
     padding: 10px 50px 10px 50px;
     border: 1px solid var(--lightgreen);
     border-radius: 4px;
     font-family: 'Overpass';
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
@@ -721,35 +723,225 @@ color: #233D63;
     background-color: var(--white);
     display: inline-block;
     text-decoration: none;
-}
-.blog-center-button{
-    padding: 40px 0px 40px 0px;
-    text-align: center;
-}
-.center-button a:hover{
+    transition: 0.3s all;
     color: #ffffff;
     background-color: #5DC9BE;
 }
- .blog-section .container{
-    padding: 110px 0px;
- }
- .blog-button {
+
+.blog-center-button {
+    text-align: center;
+    margin-top: 53px;
+}
+
+.center-button a:hover {
+    color: #5DC9BE;
+    background-color: transparent;
+}
+
+.blog-section .container {
+    padding-top: 110px;
+}
+
+.blog-button {
     position: absolute;
     bottom: 0;
+    margin-bottom: 18px;
 }
+
 li.read-button {
     padding: 0px 0px 10px 0px;
 }
+.know-more-wrapper {
+    max-width: 1366px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
 
+.know-more-flex {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
 
+.know-more input[type="text"] {
+    width: 100%;
+    padding: 16px 15px 16px 15px;
+    border: 2px solid #CECECE;
+    border-radius: 4px;
+    margin-bottom: 33px;
+    opacity: 0.5;
+}
 
+.right-col label {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #233D63;
+}
 
+.know-more-flex .left-col {
+    flex-basis: 61.35%;
+    margin-right: 3%;
+}
 
+.know-more-flex .right-col {
+    flex-basis: 35.65%;
+}
 
+.know-more-flex .left-col img {
+    width: 100%;
+    display: block;
+}
 
+.right-col .message {
+    height: 100%;
+    min-height: 213px;
+}
 
+.know-more-flex input[type="message"] {
+    height: 100%;
+    min-height: 213px;
+    width: 100%;
+    border: 2px solid #CECECE;
+    border-radius: 4px;
+    margin-bottom: 23px;
+    opacity: 0.5;
+}
 
+.know-more-heading h2 {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.24;
+    color: #233D63;
+    width: 100%;
+    max-width: 1027px;
+}
 
+.know-more-heading span {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 1.24;
+    color: #233D63;
+}
+
+.know-more-heading {
+    margin-bottom: 66px;
+}
+.know-more-flex .left-col img {
+    width: 100%;
+    display: block;
+}
+.know-more{
+    position: relative;
+    z-index: 1;
+    margin: 130px 0px 130px;
+}
+.know-more::before{
+    content:"";
+    background-image: url('./expertsimage-bg.svg');
+    background-repeat:no-repeat ;
+    background-size: cover;
+    width: 100%;
+    min-height: 172px;
+    max-width: 214px;
+    position: absolute;
+    z-index: -1;
+    bottom: -42%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+}
+.daily-updates .container {
+    padding: 71px 0px 65px 0px;
+}
+.daily-updates {
+    background-color: #FBFBFB;
+    position: relative;
+    z-index: 2;
+}
+/* .daily-updates::after{
+    content:" ";
+    background-image: url('./expertsimage-bg.svg');
+    background-repeat:no-repeat ;
+    background-size: cover;
+    width: 100%;
+    min-height: 172px;
+    max-width: 214px;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+} */
+.update-heading {
+    width: 100%;
+    max-width: 567px;
+    margin: 0 auto;
+}
+
+.update-heading h3{
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.25;
+    text-align: center;
+    color: #233D63;
+    margin-bottom: 10px;
+}
+
+.update-heading p {
+    margin-bottom: 45px;
+    text-align: center;
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+
+    color: #233D63;
+}
+
+.update-heading span {
+    font-family: 'Overpass';
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.25;
+    text-align: center;
+    color: #233D63;
+}
+
+.subscribe-form {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    max-width: 610px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.subscribe-form input {
+    border: 2px solid #CECECE;
+    border-radius: 4px;
+    opacity: 0.5;
+    padding: 28px 30px 28px 30px;
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 16px;
+    flex-basis: 92%;
+}
+
+.subscribe-form .secondary-button {
+    position: absolute;
+    z-index: 2;
+    top: 15%;
+    left: 54.5%;
+}
 
 
 
@@ -830,6 +1022,19 @@ li.read-button {
         text-align: center;
         margin: 0 auto;
     }
+    .limelight-section::before {
+        content: "";
+        background-image: url(./expertsimage-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 172px;
+        max-width: 214px;
+        position: absolute;
+        z-index: -1;
+        bottom: -40%;
+        left: -11%;
+    }
 
     .slider-section-two .container::after {
         content: "";
@@ -843,6 +1048,20 @@ li.read-button {
         z-index: -1;
         bottom: 0;
         right: -6%;
+        transform: translate(-50%, -50%);
+    }
+    .left-col-space::after {
+        content: "";
+        background-image: url(./expertsimage-bg.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        max-width: 151px;
+        min-height: 172px;
+        position: absolute;
+        z-index: -1;
+        top: 47%;
+        left: 30%;
         transform: translate(-50%, -50%);
     }
 
@@ -880,22 +1099,6 @@ li.read-button {
         min-height: 153px;
         border-radius: 50%;
     }
-
-    .left-col-space::after {
-        content: "";
-        background-image: url(./expertsimage-bg.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 100%;
-        max-width: 205px;
-        min-height: 176px;
-        position: absolute;
-        z-index: -1;
-        top: 47%;
-        left: 35%;
-        transform: translate(-50%, -50%);
-    }
-
     .experts-logo-two {
         background-image: url(./aana.svg);
         background-repeat: no-repeat;
@@ -912,15 +1115,14 @@ li.read-button {
         background-repeat: no-repeat;
         background-size: contain;
         width: 100%;
-        max-width: 205px;
+        max-width: 153px;
         min-height: 176px;
         position: absolute;
         z-index: -1;
         top: 52%;
-        left: 66%;
+        left: 55%;
         transform: translate(-50%, -50%);
     }
-
     .experts-logo-four {
         background-image: url(./chris.svg);
         background-repeat: no-repeat;
@@ -935,9 +1137,32 @@ li.read-button {
         flex-basis: 49%;
         border: 1px solid #CECECE;
         padding: 10px 0px;
-        border-radius: 5px;
+        border-radius: 5px; 
         background-color: #ffffff;
     }
+
+    .blog-main-heading {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .blog-main-heading h2 {
+        margin-bottom: 10px;
+    }
+
+    .blog-section .container {
+        padding-top: 65px;
+    }
+
+    .know-more-flex .left-col {
+        flex-basis: 100%;
+        margin-right: 0%;
+    }
+
+    .know-more-flex .right-col {
+        flex-basis: 100%;
+    }
+
 
 
 }
@@ -1256,16 +1481,19 @@ li.read-button {
         left: 58%;
         transform: translate(-50%, -50%);
     }
+
     .blog-section .blog-one {
         flex-basis: 55%;
         background-color: #ffffff;
         border-radius: 5px;
         border: 1px solid #CECECE;
         margin-bottom: 40px;
-    }    
+    }
+
     .blog-section .blog-one:not(:nth-child(3n+3)) {
         margin-right: 0%;
     }
+
     .blog-section .blog-one {
         flex-basis: 100%;
         background-color: #ffffff;
@@ -1274,12 +1502,110 @@ li.read-button {
         margin-bottom: 40px;
     }
 
+    .blog-center-button {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    section.know-more {
+        margin-top: 75px;
+    }
+
+    .know-more-heading h2 {
+        font-size: 45px;
+        line-height: 1.24;
+        color: #233D63;
+    }
+
+    .know-more-heading span {
+        font-size: 45px;
+        line-height: 1.24;
+        color: #233D63;
+    }
+
+    .blog-section .container {
+        padding-top: 50px;
+    }
+
+    .blog-main-heading {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .blog-main-heading h2 {
+        margin-bottom: 10px;
+        line-height: 1.2;
+        font-size: 36px;
+    }
+
+    .blog-section .underline-one {
+        font-family: 'Overpass';
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 1.2px;
+        text-align: center;
+        color: #233D63;
+    }
+
+    .know-more-flex .left-col {
+        flex-basis: 100%;
+        margin-right: 0%;
+    }
+
+    .know-more-flex .right-col {
+        flex-basis: 100%;
+    }
+    .subscribe-form .secondary-button {
+        position: relative;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-basis: 100%;
+        padding: 14px 15px 14px 15px;
+}
+
+    .subscribe-form input {
+        border: 2px solid #CECECE;
+        border-radius: 4px;
+        opacity: 0.5;
+        padding: 15px 30px 15px 30px;
+        font-family: 'Overpass';
+        font-weight: 400;
+        font-size: 16px;
+        height: 100%;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .know-more {
+        position: relative;
+        z-index: 1;
+        margin: 130px 0px 80px;
+    }
+    .limelight-section::before {
+        content: "";
+        background-image: url(./expertsimage-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 172px;
+        max-width: 214px;
+        position: absolute;
+        z-index: -1;
+        bottom: -18%;
+        left: -16%;
+    }
+
 
 
 
 
 
 }
+
+
+
+
 
 
 
@@ -1333,7 +1659,7 @@ li.read-button {
     }
 
     .right-col-form .form-button {
-        padding: 15px 31px 15px 31px;
+        padding: 12px 20px 12px 20px;
         margin-top: 20px;
     }
 
@@ -1362,7 +1688,7 @@ li.read-button {
         font-family: 'Overpass';
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 30px;
         line-height: 40px;
         color: var(--lightblue);
     }
@@ -1371,7 +1697,7 @@ li.read-button {
         font-family: 'Overpass';
         font-style: normal;
         font-weight: 800;
-        font-size: 24px;
+        font-size: 30px;
         line-height: 40px;
         text-align: center;
         text-decoration-line: underline;
@@ -1392,8 +1718,7 @@ li.read-button {
         max-width: 467px;
         width: 100%;
         text-align: center;
-        margin: 0 auto;
-        padding-bottom: 22px;
+        margin-bottom: 35px;
     }
 
     .slider-section-two .container::after {
@@ -1454,8 +1779,8 @@ li.read-button {
         font-family: 'Overpass';
         font-style: normal;
         font-weight: 400;
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 35px;
+        line-height: 41px;
         color: var(--lightblue);
     }
 
@@ -1488,6 +1813,7 @@ li.read-button {
         right: -2%;
         transform: scaleX(-1);
     }
+
     .blog-section .blog-one {
         flex-basis: 100%;
         background-color: #ffffff;
@@ -1495,10 +1821,11 @@ li.read-button {
         border: 1px solid #CECECE;
         margin-bottom: 40px;
     }
-    
+
     .blog-section .blog-one:not(:nth-child(3n+3)) {
         margin-right: 0%;
     }
+
     .blog-section p.blog-paragraph {
         font-family: 'Overpass';
         font-weight: 400;
@@ -1508,5 +1835,205 @@ li.read-button {
         color: #233D63;
         padding: 36px 0px 36px 0px;
     }
+
+    .know-more-heading h2 {
+        font-family: 'Overpass';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.24;
+        color: #233D63;
+        width: 100%;
+        max-width: 1027px;
+    }
+
+    .know-more-heading span {
+        font-family: 'Overpass';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 1.24;
+        color: #233D63;
+    }
+
+    .know-more-flex .left-col {
+        flex-basis: 100%;
+        margin-right: 0%;
+        margin-bottom: 50px;
+    }
+
+    .blog-section .underline-one {
+        font-family: 'Overpass';
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        color: #233D63;
+    }
+
+    .blog-main-heading h2 {
+        margin-bottom: 20px;
+    }
+
+    .blog-main-heading {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .blog-center-button {
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    section.know-more {
+        margin-top: 50px;
+    }
+
+    .know-more-flex .right-col {
+        flex-basis: 100%;
+    }
+    .know-more-flex .secondary-button {
+        padding: 14px 8px 14px 8px;
+    }
+    .know-more::before {
+        content: "";
+        background-image: url(./expertsimage-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 172px;
+        max-width: 187px;
+        position: absolute;
+        z-index: -1;
+        bottom: -22%;
+        left: -30%;
+    }
+    .update-heading h3 {
+        font-family: 'Overpass';
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.25;
+        text-align: center;
+        color: #233D63;
+        margin-bottom: 10px;
+    }
+    .update-heading span {
+        font-family: 'Overpass';
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 1.25;
+        text-align: center;
+        color: #233D63;
+    }
+    .know-more {
+        position: relative;
+        z-index: 1;
+        margin: 130px 0px 100px;
+    }
+    .daily-updates .container {
+        padding: 50px 0px 50px 0px;
+    }
+    .slider-section-two::before {
+        content: "";
+        background-image: url(./Mask\ Group\ \(1\).svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        max-width: 106px;
+        min-height: 106px;
+        position: absolute;
+        z-index: -1;
+        top: 17%;
+        left: 24%;
+        transform: translate(-50%, -50%);
+    }
+    .slider-section-two::after {
+        content: "";
+        background-image: url(./Mask\ Group.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        max-width: 106px;
+        min-height: 106px;
+        position: absolute;
+        z-index: -1;
+        top: 17%;
+        left: 78%;
+        transform: translate(-50%, -50%);
+    }
+    .slider-section-two .container::before {
+        width: 100%;
+        max-width: 70px;
+        min-height: 80px;
+    }
+    .slider-section-two .container::after {
+        max-width: 70px;
+        min-height: 80px;
+    }
+    .limelight-section {
+        position: relative;
+        z-index: 1;
+        margin: 70px 0px 50px 0px;
+    }
+    .limelight-body .lime-light-heading-content p{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .buisness-experts {
+        position: relative;
+        z-index: 1;
+        background-color: #FBFBFB;
+        padding: 65px 0px 65px 0px;
+    }
+    .subscribe-form .secondary-button {
+        position: relative;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-basis: 100%;
+        padding: 14px 15px 14px 15px;
+}
+
+    .subscribe-form input {
+        border: 2px solid #CECECE;
+        border-radius: 4px;
+        opacity: 0.5;
+        padding: 15px 30px 15px 30px;
+        font-family: 'Overpass';
+        font-weight: 400;
+        font-size: 16px;
+        height: 100%;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .rightcol-heading h1 {
+        margin-top: 15px;
+    }
+    .hero-section {
+        padding: 30px 0px 30px 0px;
+    }
+    .slider-heading h5 {
+        font-size: 22px;
+    }
+    
+    .slider-moves .slider-heading {
+        margin: 35px 0px 35px 0px;
+    }
+    .limelight-section::before {
+        content: "";
+        background-image: url(./expertsimage-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 172px;
+        max-width: 214px;
+        position: absolute;
+        z-index: -1;
+        bottom: -11%;
+        left: -28%;
+    }
+    
+    
     
 }
