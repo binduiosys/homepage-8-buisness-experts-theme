@@ -14,7 +14,6 @@
     padding: 0 20px;
     margin: 0 auto;
 }
-
 h1 {
     font-family: 'Overpass', sans-serif;
     font-weight: 400;
@@ -96,4 +95,25 @@ span.underline {
     background-repeat: no-repeat;
     background-position: center;
 
+}
+.secondary-button{
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #5DC9BE;
+    padding: 14px 52px 14px 53px;
+    background-color: transparent;
+    border: 1px solid #5DC9BE;
+    border-radius: 4px;
+    transition: 0.3s all;
+    color: #ffffff;
+    background-color: #5DC9BE;
+    display: inline-block;
+
+}
+.secondary-button:hover{
+    color: #5DC9BE;
+    background-color: transparent;
 }
