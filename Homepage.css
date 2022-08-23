@@ -60,18 +60,18 @@
     text-align: end;
 }
 
-.right-col-form .input {
+.right-col-form input[type="text"] {
     border: 1px solid var(--lightgrey);
     border-radius: 4px;
     padding: 18px 109px 18px 20px;
     font-family: 'Overpass';
     font-weight: 400;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 1.75;
     opacity: 0.5;
 }
 
-.right-col-form .form-button {
+.right-col-form button[type="submit"] {
     padding: 18px 31px 18px 31px;
     border: 1px solid var(--lightgreen);
     border-radius: 4px;
@@ -79,16 +79,22 @@
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.55;
     color: var(--white);
     background-color: var(--lightgreen);
     display: inline-block;
     -webkit-transition: 0.3s all;
     -o-transition: 0.3s all;
     transition: 0.3s all;
-
-
 }
+/* .right-col-form {
+    display: flex;
+    justify-content: end;
+    align-items: stretch;
+    flex-wrap: wrap;
+    max-width: 505px;
+    width:100%;
+} */
 
 .right-col-form .form-button:hover {
     color: var(--lightgreen);
@@ -198,6 +204,7 @@
 .limelight-flex .limeflex-one {
     -ms-flex-preferred-size: 26.5%;
     flex-basis: 26.5%;
+    position: relative;
 }
 
 .limelight-flex .limeflex-one:not(:nth-child(3n+3)) {
@@ -209,7 +216,7 @@
     margin: 0 auto;
 }
 
-.limelight-body .flex-describe {
+.limelight-body .flex-content p{
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 400;
@@ -217,7 +224,7 @@
     line-height: 28px;
     color: #30496D;
     text-align: center;
-    padding: 30px 0px 50px 0px;
+    margin-bottom: 49px;
 }
 
 .limelight-body a.flex-buttons {
@@ -230,6 +237,7 @@
     text-decoration-line: underline;
     color: #233D63;
     letter-spacing: 0.22px;
+    transition: 0.5s all ease;
 }
 
 .limelight-body a.flex-buttons:hover {
@@ -261,6 +269,8 @@
     line-height: 28px;
     text-align: center;
     letter-spacing: 0.0552632px;
+    margin-bottom: 34px;
+
 }
 
 .slider-section-two {
@@ -281,7 +291,7 @@
     margin-bottom: 50px;
 }
 
-.slider-review {
+.slider-review{
     max-width: 710px;
     width: 100%;
     text-align: center;
@@ -329,7 +339,7 @@
     line-height: 28px;
 }
 
-.slider-review {
+.slider-review p{
     font-family: 'Overpass';
     font-style: normal;
     font-weight: 400;
@@ -414,7 +424,7 @@
 
 }
 
-.experts-social-link {
+.buisness-experts .experts-social-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -428,8 +438,11 @@
     flex-wrap: wrap;
     text-align: center;
 }
+.experts-social-link .fa-brands:hover{
+    color: rgb(219, 13, 219)
+}
 
-.link-one {
+.buisness-experts .link-one {
     -ms-flex-preferred-size: 15%;
     flex-basis: 15%;
 }
@@ -725,6 +738,12 @@
     background-color: #ffffff;
     border-radius: 5px;
     position: relative;
+    border-left:  1px solid #CECECE;
+    border-right:1px solid #CECECE ;
+    border-bottom: 1px solid #CECECE;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
 
 }
 .blog-section .blog-one:hover{
@@ -783,15 +802,25 @@
 .blog-image img {
     width: 100%;
     display: block;
+    object-fit: cover;
+    min-height: 252px;
+}
+.blog-date{
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    max-width: 312px;
+    width:100%;
+}
+.blog-date .date{
+    flex-basis: 35%;
+}
+.blog-date .read{
+    flex-basis: 50%;
 }
 
 .blog-contents {
     padding: 22px;
-    border-left:  1px solid #CECECE;
-    border-right:1px solid #CECECE ;
-    border-bottom: 1px solid #CECECE;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
 }
 
 .blog-section .underline-one {
@@ -818,20 +847,20 @@
 }
 
 .center-button a {
-    padding: 10px 50px 10px 50px;
+    padding: 16px 51px 16px 51px;
     border: 1px solid var(--lightgreen);
     border-radius: 4px;
     font-family: 'Overpass';
     font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 1.3125;
     color: var(--lightgreen);
     background-color: var(--white);
     display: inline-block;
     text-decoration: none;
-    -webkit-transition: 0.3s all;
-    -o-transition: 0.3s all;
-    transition: 0.3s all;
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+    transition: 0.5s all ease;
     color: #ffffff;
     background-color: #5DC9BE;
 }
@@ -1048,7 +1077,7 @@ li.read-button {
     border: 2px solid #CECECE;
     border-radius: 4px;
     opacity: 0.5;
-    padding: 28px 30px 28px 30px;
+    padding: 28px 230px 28px 30px;
     font-family: 'Overpass';
     font-weight: 400;
     font-size: 16px;
@@ -1062,10 +1091,127 @@ li.read-button {
     top: 15%;
     left: 54.5%;
 }
+.limelight-body .flex-button {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+ .footer-flex-one img{
+    display: block;
+    object-fit: cover;
+}
+.footer-flex-two .about-us-heading h6{
+    font-family: 'Overpass';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.33;
+    color: #233D63;
+    text-align:left;
+    margin-bottom: 5px;
 
+}
+.footer-flex-two .about-us-content p{
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #233D63;
+}
+.flex-page a{
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #233D63;
+    text-decoration: none;
 
+}
+.flex-page{
+    flex-basis: 20%;
+}
+.footer-flex-two {
+    flex-basis: 50%;
+    margin-right: 6%;
+}
+.footer-flex-one {
+    flex-basis: 44%;
+}
+.footr-main-flex {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+.footer-main-body {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+.footer-first-flex {
+    flex-basis: 56%;
+}
+.footer-second-flex {
+    flex-basis: 44%;
+}
+.footer-section{
+    margin-top: 95px;
+    margin-bottom: 50px;
+}
+.copyright-text p{
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #233D63;
 
+}
+.copy-right-body .experts-social-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.experts-social-link .fa-brands:hover{
+    color: rgb(219, 13, 219)
+}
 
+.copy-right-body .link-one {
+    -ms-flex-preferred-size: 5%;
+    flex-basis: 5%;
+}
+.copy-right-body{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.copy-right-flex{
+    flex-basis: 50%;
+}
+.copyright-col{
+    flex-basis: 45%;
+}
 
 
 
@@ -1297,6 +1443,9 @@ li.read-button {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
+    .footer-second-flex {
+        flex-basis: 52%;
+    }
 
 
 
@@ -1411,11 +1560,6 @@ li.read-button {
         display: block;
         margin: 0 auto;
     }
-
-    .limelight-body .flex-describe {
-        padding: 20px 0px 20px 0px;
-    }
-
     .lime-light-heading h2 {
         font-family: 'Overpass';
         font-style: normal;
@@ -1437,7 +1581,7 @@ li.read-button {
         color: #233D63;
     }
 
-    .slider-review {
+    .slider-review p{
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
@@ -1724,14 +1868,14 @@ li.read-button {
     }
 
     .know-more-flex .left-col {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-        margin-right: 0%;
+        -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+        margin-right: 2%;
     }
 
     .know-more-flex .right-col {
-        -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     }
 
     .subscribe-form .secondary-button {
@@ -1778,10 +1922,101 @@ li.read-button {
         bottom: -18%;
         left: -16%;
     }
-
-
-
-
+    .know-more::before {
+        content: "";
+        background-image: url(./expertsimage-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 172px;
+        max-width: 214px;
+        position: absolute;
+        z-index: -1;
+        bottom: -37%;
+        left: 0%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .blog-image img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        min-height: 252px;
+    }
+    .right-col-form input[type="text"] {
+        border: 1px solid var(--lightgrey);
+        border-radius: 4px;
+        padding: 18px 87px 18px 20px;
+        font-family: 'Overpass';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.75;
+        opacity: 0.5;
+    }
+    .right-col-form button[type="submit"] {
+        padding: 18px 22px 18px 22px;
+        border: 1px solid var(--lightgreen);
+        border-radius: 4px;
+        font-family: 'Overpass';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.55;
+        color: var(--white);
+        background-color: var(--lightgreen);
+        display: inline-block;
+        -webkit-transition: 0.3s all;
+        -o-transition: 0.3s all;
+        transition: 0.3s all;
+    }
+    .limelight-body .flex-heading h5 {
+        margin-top: 30px;
+        font-family: 'Overpass';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.0552632px;
+        margin-bottom: 0px;
+    }
+    .limelight-body .flex-content p {
+        padding: 20px 0px 0px 0px;
+    }
+    .footer-first-flex {
+        flex-basis: 100%;
+    }
+    .footer-second-flex {
+        flex-basis: 100%;
+    }
+    .footer-flex-two {
+        flex-basis: 100%;
+        margin-right: 0%;
+        margin-bottom: 30px;
+    }
+    .footer-flex-one {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .flex-page {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+    .copy-right-flex {
+        flex-basis: 100%;
+        margin-bottom: 30px
+    }
+    .copy-right-body .link-one {
+        -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    }
+    .footer-section {
+        margin-top: 45px;
+        margin-bottom: 50px;
+    }
+    
+    
 
 
 }
@@ -1904,7 +2139,7 @@ li.read-button {
         margin: 0 auto;
     }
 
-    .slider-review {
+    .slider-review p{
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
@@ -2264,7 +2499,32 @@ li.read-button {
         bottom: -11%;
         left: -28%;
     }
-
+    .right-col-form input[type="text"] {
+        border: 1px solid var(--lightgrey);
+        border-radius: 4px;
+        padding: 9px 10px 10px 10px;
+        font-family: 'Overpass';
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 1.75;
+        opacity: 0.5;
+    }
+    .right-col-form button[type="submit"] {
+        padding: 10px;
+        border: 1px solid var(--lightgreen);
+        border-radius: 4px;
+        font-family: 'Overpass';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.75;
+        color: var(--white);
+        background-color: var(--lightgreen);
+        display: inline-block;
+        -webkit-transition: 0.3s all;
+        -o-transition: 0.3s all;
+        transition: 0.3s all;
+    }
 
 
 }
