@@ -455,14 +455,16 @@
     flex-wrap: wrap;
     -ms-flex-preferred-size: 48%;
     flex-basis: 48%;
-    padding: 110px 0px 25px 0px;
+    margin-bottom: 97px;
 
 }
 
 .meet-experts-flex:not(:nth-child(2n+2)) {
     margin-right: 4%;
 }
-
+.meet-experts-body {
+    margin-bottom: 121px;
+}
 .experts-designation {
     margin: 20px 0px;
 }
@@ -548,8 +550,8 @@
     min-height: 176px;
     position: absolute;
     z-index: -1;
-    top: 27%;
-    left: 35%;
+    top: 24%;
+    left: 40%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -573,8 +575,8 @@
 }
 
 .experts-content {
-    -ms-flex-preferred-size: 49%;
-    flex-basis: 49%;
+    -ms-flex-preferred-size: 49.7%;
+    flex-basis: 49.7%;
     border: 1px solid #CECECE;
     padding: 30px 0px;
     border-radius: 5px;
@@ -662,7 +664,7 @@
     position: relative;
     z-index: 1;
     background-color: #FBFBFB;
-    padding: 100px 0px 100px 0px;
+    padding: 100px 0px 0px 0px;
 }
 
 .buisness-experts::after {
@@ -691,6 +693,8 @@
     align-items: stretch;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    max-width: 1169px;
+    padding: 0 20px;
 }
 
 .left-col-space {
@@ -720,9 +724,13 @@
     flex-basis: 31.2%;
     background-color: #ffffff;
     border-radius: 5px;
-    border: 1px solid #CECECE;
     position: relative;
 
+}
+.blog-section .blog-one:hover{
+    box-shadow: 5px 3px 30px -5px rgb(85, 80, 80);
+    cursor: pointer;
+    transition:  0.5s all;
 }
 
 .blog-section .blog-one:not(:nth-child(3n+3)) {
@@ -779,6 +787,11 @@
 
 .blog-contents {
     padding: 22px;
+    border-left:  1px solid #CECECE;
+    border-right:1px solid #CECECE ;
+    border-bottom: 1px solid #CECECE;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .blog-section .underline-one {
@@ -834,7 +847,7 @@
 }
 
 .blog-section .container {
-    padding-top: 110px;
+    padding-top: 58px;
 }
 
 .blog-button {
@@ -1120,7 +1133,7 @@ li.read-button {
         letter-spacing: 0.0552632px;
     }
 
-    .slider-review {
+    .slider-review p{
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
@@ -1600,7 +1613,7 @@ li.read-button {
         display: flex;
         -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
-        padding: 110px 0px 25px 0px;
+        margin-bottom: 68px;
     }
 
     .mobile-flex-leftcol:nth-child(1n+1) {
@@ -1947,7 +1960,7 @@ li.read-button {
         display: flex;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-        padding: 56px 0px 25px 0px;
+        margin-top: 0px;
     }
 
     .buisness-experts .underline-one {
