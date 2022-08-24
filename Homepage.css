@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Open+Sans:wght@400;600&family=Overpass:wght@400;600&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Open+Sans:wght@400;600&family=Overpass:wght@400;600;800&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,700;1,800;1,900&display=swap');
 
@@ -237,6 +244,8 @@
     text-decoration-line: underline;
     color: #233D63;
     letter-spacing: 0.22px;
+    -webkit-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
     transition: 0.5s all ease;
 }
 
@@ -452,6 +461,7 @@
     width: 100%;
     max-width: 9px;
     min-height: 16px;
+    font-size: 20px;
 }
 
 .meet-experts-flex {
@@ -747,8 +757,11 @@
 
 }
 .blog-section .blog-one:hover{
-    box-shadow: 5px 3px 30px -5px rgb(85, 80, 80);
+    -webkit-box-shadow: 5px 3px 30px -5px rgb(85, 80, 80);
+            box-shadow: 5px 3px 30px -5px rgb(85, 80, 80);
     cursor: pointer;
+    -webkit-transition:  0.5s all;
+    -o-transition:  0.5s all;
     transition:  0.5s all;
 }
 
@@ -802,21 +815,29 @@
 .blog-image img {
     width: 100%;
     display: block;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     min-height: 252px;
 }
 .blog-date{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: stretch;
-    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     max-width: 312px;
     width:100%;
 }
 .blog-date .date{
-    flex-basis: 35%;
+    -ms-flex-preferred-size: 35%;
+        flex-basis: 35%;
 }
 .blog-date .read{
-    flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
 }
 
 .blog-contents {
@@ -1100,7 +1121,8 @@ li.read-button {
 }
  .footer-flex-one img{
     display: block;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 .footer-flex-two .about-us-heading h6{
     font-family: 'Overpass';
@@ -1130,33 +1152,52 @@ li.read-button {
 
 }
 .flex-page{
-    flex-basis: 20%;
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
 }
 .footer-flex-two {
-    flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     margin-right: 6%;
 }
 .footer-flex-one {
-    flex-basis: 44%;
+    -ms-flex-preferred-size: 44%;
+        flex-basis: 44%;
 }
 .footr-main-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .footer-main-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-bottom: 32px;
 }
 .footer-first-flex {
-    flex-basis: 56%;
+    -ms-flex-preferred-size: 56%;
+        flex-basis: 56%;
 }
 .footer-second-flex {
-    flex-basis: 44%;
+    -ms-flex-preferred-size: 44%;
+        flex-basis: 44%;
 }
 .footer-section{
     margin-top: 95px;
@@ -1207,11 +1248,23 @@ li.read-button {
     text-align: center;
 }
 .copy-right-flex{
-    flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
 }
 .copyright-col{
-    flex-basis: 45%;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
 }
+.flex-page li:not(:last-child) {
+    padding-right: 32px;
+}
+.flex-page li {
+    display: inline-block;
+}
+.flex-page li a:hover{
+    color: rgb(234, 29, 234);
+}
+
 
 
 
@@ -1444,8 +1497,50 @@ li.read-button {
         flex-basis: 100%;
     }
     .footer-second-flex {
-        flex-basis: 52%;
+        -ms-flex-preferred-size: 52%;
+            flex-basis: 52%;
     }
+    .footer-first-flex {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    }
+    .footer-second-flex {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    }
+    .footer-flex-two {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        margin-right: 0%;
+        margin-bottom: 30px;
+    }
+    .footer-flex-one {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .flex-page {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+    .copy-right-flex {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        margin-bottom: 30px
+    }
+    .copy-right-body .link-one {
+        -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+    }
+    .footer-section {
+        margin-top: 45px;
+        margin-bottom: 50px;
+    }
+    .flex-page li {
+        display: block;
+    }
+
 
 
 
@@ -1941,7 +2036,8 @@ li.read-button {
     .blog-image img {
         width: 100%;
         display: block;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
         min-height: 252px;
     }
     .right-col-form input[type="text"] {
@@ -1985,26 +2081,32 @@ li.read-button {
         padding: 20px 0px 0px 0px;
     }
     .footer-first-flex {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     }
     .footer-second-flex {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     }
     .footer-flex-two {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         margin-right: 0%;
         margin-bottom: 30px;
     }
     .footer-flex-one {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         margin-bottom: 30px;
     }
     .flex-page {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         margin-bottom: 10px;
     }
     .copy-right-flex {
-        flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         margin-bottom: 30px
     }
     .copy-right-body .link-one {
@@ -2014,6 +2116,9 @@ li.read-button {
     .footer-section {
         margin-top: 45px;
         margin-bottom: 50px;
+    }
+    .flex-page li {
+        display: block;
     }
     
     
@@ -2524,6 +2629,9 @@ li.read-button {
         -webkit-transition: 0.3s all;
         -o-transition: 0.3s all;
         transition: 0.3s all;
+    }
+    .flex-page li {
+        display: block;
     }
 
 
