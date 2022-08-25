@@ -1293,115 +1293,108 @@ li.read-button {
     color: var(--lightgreen)
 }
 
-.header-section .right-col {
-    flex-basis: 70%;
-}
-
-.header-section .left-col {
-    flex-basis: 30%;
-}
-
-.header-pages li:not(:first-child) {
-    padding-left: 50px;
-}
-
-.header-pages .menu-inner {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.header-section .header-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.header-pages .menu-inner a {
-    text-decoration: none;
-    font-family: 'Overpass';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(35, 61, 99, 0.8);
-}
-
-.header-logo img {
-    opacity: 0.5;
-    display: block;
-}
-
-.header-pages span a {
-    font-family: 'Overpass';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #FFFFFF;
-    background-color: var(--lightgreen);
-    padding: 14px 32px 14px 32px;
-    border-radius: 4px;
-}
-
-.header-pages {
-    position: relative;
-    z-index: 1;
-}
-
-/* .header-pages .menu-inner li:first-child::after {
-    content: "\2b";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    padding-left: 5px;
-    vertical-align: middle;
-} */
-
-.header-section {
-    margin: 50px 0px 0px 0px;
-}
-
-.header-section {
-    position: relative;
-    z-index: 1;
-}
-
-.header-section:after {
-    content: "";
-    background-color: var(--lightgreen);
-    min-height: 3px;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    bottom: -100%;
-}
-
 .burger {
     display: none;
     visibility: hidden;
 }
 
-.drop-down-one {
-    display: none ;
+.menu-link a{
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(35, 61, 99, 0.8);
+    text-decoration: none;
 }
-.menu-inner:hover .drop-down-one{
-    display: block;
+.header-container-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ul.menu-inner {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap; 
+}
+
+.right-col.navbar {
+    flex-basis: 58%;
+}
+.left-col {
+    flex-basis: 28%;
+}
+.header-button{
+    flex-basis: 14%;                
+}
+.header-container-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header-section{
+    background-color: var(--white);
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 10%);
+
+}
+.dropdown a{
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+ul.dropdown li.first-child {
+    margin-bottom: 8px;
+    padding: 0px 20px 0px 10px;
+}
+ul.dropdown {
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    width: 170px;
+    padding: 15px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+    z-index: 11;
+    transition: all .3s ease;
+    opacity: 0;
+    left: -50%;
+    visibility: hidden;
+    top: 100px;
+    background-color: var(--lightgreen);
+    border-radius: 4px;
 }
-.menu{
-    display:inline-block;
+li.menu-link:hover ul.dropdown {
+    opacity: 1;
+    visibility: visible;
+    top: 88px;
+}
+.menu-inner li.menu-link {
     position: relative;
+    padding: 35px 27px 35px 10px;
 }
-
-
-
-
-
+li.menu-link:hover > a {
+    color: var(--lightgreen);
+}
+li.menu-link.child:after {
+    content: "\2b";
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 82%;
+}
+ul.dropdown li.first-child:hover a{
+    color: var(--lightblue);
+}
+    
+li.menu-link.child:hover::after{
+    color: var(--lightgreen);
+}
+.menu-inner a.active{
+   color: var(--lightgreen);
+}
 
 
 
@@ -1444,21 +1437,22 @@ li.read-button {
     .menu {
         position: fixed;
         top: 0;
-        left: -100%;
-        width: 80%;
+        right: 0;
+        width: 100%;
+        max-width: 45%;
         height: 100%;
         z-index: 10;
         overflow-y: auto;
-        background-color: var(--color-white);
-        box-shadow: var(--shadow-medium);
+        background-color: var(--white);
+        box-shadow:1px 1px 10px var(--lightblue);
         transition: all 0.5s ease-in-out;
     }
 
     .overlay {
         position: fixed;
         top: 0;
-        left: 0;
-        width: 100%;
+        right: 100%;
+        width: 45%;
         height: 100%;
         z-index: 9;
         opacity: 0;
@@ -1472,12 +1466,62 @@ li.read-button {
         opacity: 1;
         visibility: visible;
     }
-
     .menu.is-active {
         top: 0;
         left: 0;
     }
+    li.menu-link.child:after {
+        content: "\2b";
+        position: absolute;
+        top: 74%;
+        transform: translate(-50%, -50%);
+        left: 96%;
+    }
+    ul.menu-inner{
+        display: block;
+    }
+    .header-button{
+        display: none;
+    }
+    .menu-inner li.menu-link {
+        position: relative;
+        padding: 22px 20px 10px 20px;
+    }
+    li.menu-link.child:after {
+        content: "\2b";
+        position: absolute;
+        top: 70%;
+        transform: translate(-50%, -50%);
+        left: 96%;
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -------------media queries------------------ */
 
@@ -1749,6 +1793,26 @@ li.read-button {
 
     .flex-page li {
         display: block;
+    }
+    .left-col {
+        flex-basis: 14%;
+    }
+    .right-col.navbar {
+        flex-basis: 71%;
+    }
+    .primary-button a {
+        font-family: 'Overpass';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.25;
+        color: var(--white);
+        background-color: var(--lightgreen);
+        padding: 14px 10px 14px 10px;
+        border-radius: 4px;
+        display: inline-block;
+        cursor: pointer;
+        transition: 0.5s all;
+        text-decoration: none;
     }
 
 
