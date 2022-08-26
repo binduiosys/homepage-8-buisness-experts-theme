@@ -13,6 +13,8 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 
 
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -50,8 +52,9 @@
                                 <span class="overlay"></span>
                                 <div class="menu" id="menu">
                                 <ul type="none" class="menu-inner">
+                                    <div class="slide-up"></div>
                                     <li class="menu-link child"><a href='/Homepage.html'>Home</a>
-                                            <ul type="none" class="dropdown active">
+                                            <ul type="none" class="dropdown">
                                             <li class="first-child"><a href="">Home One</a></li>
                                             <li class="first-child"><a href="">Home Two</a></li>
                                             <li class="first-child"><a href="">Home Three</a></li>
@@ -59,7 +62,7 @@
                                     </li>
                                     <li class="menu-link"><a href="">Service</a></li>
                                     <li class="menu-link child"><a href="">About</a>
-                                        <ul type="none" class="dropdown active">
+                                        <ul type="none" class="dropdown">
                                         <li class="first-child"><a href="">About One</a></li>
                                         <li class="first-child"><a href="">About Two</a></li>
                                         <li class="first-child"><a href="">About Three</a></li>
@@ -68,7 +71,7 @@
                                     <li class="menu-link"><a href="">Blog</a></li>
                                     <li class="menu-link"><a href="" >Features</a></li>
                                     <li class="menu-link child"><a href="" >Contact</a>
-                                        <ul type="none" class="dropdown active">
+                                        <ul type="none" class="dropdown ">
                                             <li class="first-child"><a href="">Contact One</a></li>
                                             <li class="first-child"><a href="">Contact Two</a></li>
                                             <li class="first-child"><a href="">Contact Three</a></li>
@@ -822,7 +825,8 @@ const navbarMenu = document.getElementById("menu");
 const burgerMenu = document.getElementById("burger");
 const bgOverlay = document.querySelector(".overlay");
 
-if (burgerMenu && bgOverlay) {
+
+if (burgerMenu && bgOverlay ) {
 burgerMenu.addEventListener("click", () => {
 navbarMenu.classList.add("is-active");
 bgOverlay.classList.toggle("is-active");
@@ -833,16 +837,11 @@ navbarMenu.classList.remove("is-active");
 bgOverlay.classList.toggle("is-active");
 });
 }
-
-// Close Navbar Menu on Links Click
-document.querySelectorAll(".menu-link").forEach((link) => {
-link.addEventListener("click", () => {
-navbarMenu.classList.remove("is-active");
-bgOverlay.classList.remove("is-active");
-});
-});
-
 </script>
+
+
+
+<!-- add active class-code -->
     
 <script>
  $(function(){
@@ -856,6 +855,28 @@ bgOverlay.classList.remove("is-active");
     })
 })
 </script>
+<!-- add active class-code ends-->
+
+
+
+
+<script>
+$(document).ready(function(){
+  $(".burger").click(function(){
+      $(this).toggleClass("active");
+    $(".menu").slideToggle();
+  });
+});
+</script>
+<!-- <script>
+    $(document).ready(function(){
+      $(".child").click(function(){
+          $(this).toggleClass("active");
+        $(".dropdown").slideToggle();
+      });
+    });
+</script> -->
+
 
 </body>
 
